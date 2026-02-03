@@ -1,46 +1,67 @@
 ---
 name: ingest_notebooklm
-description: Automate the extraction of knowledge from Google NotebookLM using browser automation (Playwright/Puppeteer) as a bridge since no public API exists.
+description: Automate the extraction of knowledge from Google NotebookLM using the unofficial Python API wrapper (`notebooklm-py`).
 triggers:
   - "leer mi cuaderno"
   - "usar notebooklm"
   - "conectar notebook"
 ---
 
-# Ingestión de Conocimiento NotebookLM (Browser Bridge)
+# Ingestión de Conocimiento NotebookLM (API Wrapper)
 
 ## Objetivo
-Acceder y extraer información de un "Cuaderno" (Notebook) de Google NotebookLM para usarlo como contexto en tareas de generación de video o código.
+Acceder programáticamente a NotebookLM para extraer resúmenes, fuentes y chats de un cuaderno específico.
 
-## Limitación Técnica
-NotebookLM **NO tiene API pública**.
-**Solución**: Usamos un Agente de Navegación (Browser Agent) simulando un usuario humano.
+## Requisito Crítico: Cookies
+Dado que no existe API pública, este método requiere que el usuario extraiga manualmente sus cookies de `notebooklm.google.com` UNA VEZ y las guarde.
 
-## Requisitos
-1.  **Habilidad Base**: El agente debe tener acceso a `building-browser-agents` (Playwright/Puppeteer).
-2.  **Autenticación**:
-    *   *Opción A (Interactivo)*: El agente abre el navegador en modo "con cabeza" (headed), el usuario se loguea manualmente, y el agente guarda el estado (`auth.json`).
-    *   *Opción B (Cookies)*: El usuario exporta sus cookies de Google a `notebooklm_cookies.json`.
+1.  **Instalar extensión**: "Cookie-Editor" (o usar F12 DevTools).
+2.  **Exportar**: Copiar las cookies en formato Netscape o JSON.
+3.  **Guardar**: Crear archivo `notebooklm_cookies.txt` en la raíz del proyecto.
 
-## Flujo de Ejecución (Script Conceptual)
+## Implementación Técnica
 
-### 1. Inicialización
-*   El agente verifica si tiene credenciales válidas.
-*   Lanza navegador: `https://notebooklm.google.com/`.
+### 1. Librería
+Usaremos `notebooklm-py` (o equivalente funcional) para manejar la comunicación RPC.
 
-### 2. Navegación
-*   Identifica la lista de cuadernos.
-*   Selecciona el cuaderno especificado por el usuario (ej: "Lanzamiento Producto").
-*   Navega a la sección de "Fuentes" o "Chat".
+### 2. Script de Puente (`bridge.py`)
+El agente debe generar y ejecutar este script cuando se le solicite:
 
-### 3. Extracción (Scraping)
-*   **Modo Resumen**: Extrae el "Resumen del Cuaderno" (Audio Overview transcript o texto generado).
-*   **Modo Consulta**: Envía un prompt al chat de NotebookLM: *"Resume los puntos clave para un video de 30s"*.
-*   Captura la respuesta del DOM.
+```python
+import os
+from notebooklm import NotebookLMClient
 
-### 4. Salida
-*   Guarda la información extraída en `temp/notebook_context.txt`.
-*   Pasa este contexto a la siguiente skill (ej: `remotion-video`).
+def fetch_notebook_data(notebook_id):
+    # Cargar cookies
+    cookies_path = "notebooklm_cookies.txt"
+    if not os.path.exists(cookies_path):
+        print("ERROR: No se encontró 'notebooklm_cookies.txt'. Por favor exporta tus cookies.")
+        return
 
-## Instrucción para el Agente (runtime)
-> *"Si el usuario pide conectar NotebookLM, utiliza la herramienta `browser_action` para navegar a la URL. Si encuentras un muro de login, pausa y solicita al usuario que se autentique en la ventana abierta."*
+    # Inicializar cliente
+    client = NotebookLMClient(headers_or_cookies=cookies_path)
+    
+    # Obtener datos
+    print(f"Conectando a cuaderno {notebook_id}...")
+    notebook = client.get_notebook(notebook_id)
+    
+    # Salida
+    print(f"--- TÍTULO: {notebook.title} ---")
+    print(f"--- RESUMEN ---")
+    print(notebook.summary)
+    print(f"--- FUENTES ---")
+    for source in notebook.sources:
+        print(f"- {source.title}")
+
+if __name__ == "__main__":
+    # ID del cuaderno (extraído de la URL por el usuario o agente)
+    NB_ID = os.getenv("NOTEBOOK_ID")
+    fetch_notebook_data(NB_ID)
+```
+
+## Instrucciones de Uso para el Agente
+Si el usuario pide conectar:
+1.  Pide al usuario: "Por favor, pega la URL de tu cuaderno y asegúrate de tener el archivo `notebooklm_cookies.txt`".
+2.  Extrae el `notebookId` de la URL.
+3.  Ejecuta el script `bridge.py` pasando el ID.
+4.  Lee la salida y úsala como contexto.
