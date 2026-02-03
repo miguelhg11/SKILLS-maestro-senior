@@ -37,7 +37,8 @@ def main():
     with open(html_path, "r", encoding="utf-8") as f:
         content = f.read()
 
-    keywords = ["tendencia", "diseño", "web", "layout", "ux", "ui", "maestro", "senior", "mejora"]
+    keywords = ["tendencia", "diseño", "web", "layout", "ux", "ui", "maestro", "senior", "mejora", "architectural", "standards", "modern", "frontend", "visual"]
+
     all_findings = []
 
     print("Searching for WIZ_global_data...")

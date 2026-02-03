@@ -7,6 +7,15 @@ description: Managing cloud infrastructure using declarative and imperative IaC 
 
 Provision and manage cloud infrastructure using code-based automation tools. This skill covers tool selection, state management, module design, and operational patterns across Terraform/OpenTofu, Pulumi, and AWS CDK.
 
+## Hard Rules (MUST)
+> **Source**: SLSA & Terraform Best Practices
+
+1. **State Security**: State files MUST be stored remotely (S3/GCS) with **Encryption at Rest** enabled.
+2. **No Secrets**: Secrets (passwords, keys) MUST NOT be committed to Git. Use `sensitive = true` and external secret stores (Vault/ASM).
+3. **Locking**: State locking (DynamoDB/Lease) MUST be enabled to prevent race conditions.
+4. **Build as Code (SLSA L1)**: The infrastructure build process MUST be fully defined in script/code (no manual console clicks).
+5. **Version Pinning**: Production modules MUST pin provider and module versions (e.g., `~> 5.0`).
+
 ## When to Use
 
 Use this skill when:

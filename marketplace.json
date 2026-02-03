@@ -1,0 +1,48 @@
+{
+    "name": "Antigravity Skill Marketplace",
+    "version": "1.0.0",
+    "items": [
+        {
+            "name": "playbook-idea-to-architecture",
+            "description": "Orchestrates Research -> API -> IaC to build a spec.",
+            "path": "playbooks/idea-to-architecture.md",
+            "type": "playbook"
+        },
+        {
+            "name": "playbook-secure-go-live",
+            "description": "Security & SRE checklist for production deployment.",
+            "path": "playbooks/secure-go-live.md",
+            "type": "playbook"
+        },
+        {
+            "name": "orchestrating-agents",
+            "description": "Core orchestration capability for the Maestro.",
+            "path": "skills/orchestrating-agents/SKILL.md",
+            "type": "skill"
+        },
+        {
+            "name": "notebooklm-research",
+            "description": "Advanced research capability using NotebookLM.",
+            "path": "skills/notebooklm-research/SKILL.md",
+            "type": "skill"
+        },
+        {
+            "name": "advanced-research-methodology",
+            "description": "Deep research frameworks (Cynefin, Lean A3).",
+            "path": "skills/advanced-research-methodology/SKILL.md",
+            "type": "skill"
+        },
+        {
+            "name": "supply-chain-security",
+            "description": "SLSA and SBOM generation standards.",
+            "path": "skills/supply-chain-security/SKILL.md",
+            "type": "skill"
+        },
+        {
+            "name": "sre-resilience",
+            "description": "Reliability engineering and error budgets.",
+            "path": "skills/sre-resilience/SKILL.md",
+            "type": "skill"
+        }
+    ]
+}

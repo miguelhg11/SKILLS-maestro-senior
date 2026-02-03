@@ -11,6 +11,15 @@ Performance engineering encompasses load testing, profiling, and optimization to
 
 Use this skill to validate system capacity before launch, detect performance regressions in CI/CD pipelines, identify and resolve bottlenecks through profiling, and optimize application responsiveness across the stack.
 
+## Hard Rules (MUST)
+> **Source**: Web.dev & Google Search Central 2024
+
+1. **Interaction to Next Paint (INP)**: MUST be under **200ms** at p75.
+2. **Cumulative Layout Shift (CLS)**: MUST be under **0.1** at p75.
+3. **Largest Contentful Paint (LCP)**: MUST be under **2.5s** at p75.
+4. **Render Blocking**: Critical CSS MUST be inlined; non-critical JS MUST be deferred.
+5. **Images**: All images "below the fold" MUST use `loading="lazy"`.
+
 ## When to Use This Skill
 
 **Common Triggers:**

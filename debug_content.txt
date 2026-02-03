@@ -1,0 +1,659 @@
+Title: Antigravity Skill Factory: LLM Agent Training Framework - NotebookLM
+
+add
+Crear cuaderno
+trending_up
+Analíticas
+share
+Compartir
+settings
+Configuración
+PRO
+Fuentes
+dock_to_right
+add
+Añadir fuentes
+search
+language
+Web
+keyboard_arrow_down
+search_spark
+Investigación rápida
+keyboard_arrow_down
+arrow_forward
+Seleccionar todas las fuentes
+markdown
+Informe de Deep Research: Architectural Resilience and the Evolution of Distributed Systems: A Comprehensive Technical Analysis of Modern Software Engineering Paradigms
+web
+3.0.0 | AsyncAPI Initiative for event-driven APIs
+web
+AIP-1: AIP Purpose and Guidelines
+web
+API design guide | Cloud API Design Guide | Google Cloud Documentation
+drive_pdf
+ARCHIVED: AWS Well-Architected Framework - awsstatic.com
+web
+ARIA: aria-modal attribute - ARIA | MDN
+web
+ATT&CK Data & Tools | MITRE ATT&CK®
+web
+AWS Well-Architected - Build secure, efficient cloud applications
+drive_pdf
+AWS Well-Architected Framework
+web
+AWS Well-Architected Framework - AWS Well-Architected Framework
+web
+Angular coding style guide
+drive_pdf
+Attribute-based Access Control for Microservices-based Applications Using a Service Mesh - NIST Technical Series Publications
+web
+Azure Architecture Center - Azure Architecture Center | Microsoft Learn
+drive_pdf
+Best Practices for Running Workloads in Public Cloud Environments Authors: JOSEPH MART[1], Amos Oyetoro[2], Ugoch - ScienceOpen
+web
+CNCF Platforms White Paper | CNCF TAG App Delivery
+web
+CSS for Web Vitals | Articles | web.dev
+web
+Cloud Architecture Guidance and Topologies | Cloud Architecture Center | Google Cloud Documentation
+web
+Cloud Design Patterns - Azure Architecture Center | Microsoft Learn
+web
+Cloud Native Security Whitepaper | CNCF
+web
+Cloud Native Security Whitepaper | CNCF TAG Security
+web
+Concepts | Kubernetes
+web
+Concepts | Kubernetes
+web
+Core Web Vitals | web.dev
+web
+CycloneDX Bill of Materials Standard | CycloneDX
+web
+DORA | DORA’s software delivery performance metrics
+web
+Dialog (Modal) Pattern | APG | WAI | W3C
+web
+Docs
+web
+Documentation - OpenTelemetry
+web
+Documentation Redirect | Apache Kafka
+web
+Figma Best Practices
+web
+Figma Blog | Shortcut
+web
+Final: OpenID Connect Core 1.0 incorporating errata set 2
+web
+Five-minute overview - Trunk Based Development
+web
+Get Started | MITRE ATT&CK®
+web
+GitHub - microsoft/api-guidelines: Microsoft REST API Guidelines
+web
+Google Cloud Well-Architected Framework | Cloud Architecture Center | Google Cloud Documentation
+web
+Google SRE - Site Reliability engineering
+web
+Google SRE book- Comprehensive guide to site reliability
+web
+Google SRE book- Comprehensive guide to site reliability
+web
+Insisting on Core Development Principles – A List Apart
+web
+Instrumentation | Prometheus
+web
+Interaction to Next Paint (INP) | Articles | web.dev
+web
+Introduction
+web
+Introduction {#intro} | eng-practices
+web
+Introduction | Testing Library
+web
+Kubernetes Components | Kubernetes
+web
+List of software architecture styles and patterns - Wikipedia
+web
+MITRE ATT&CK | MITRE
+web
+MITRE ATT&CK®
+web
+Material Design
+info
+web
+Microsoft Azure Well-Architected Framework pillars
+web
+Modal Dialog Example | APG | WAI | W3C
+web
+NIST SP 800-63 Digital Identity Guidelines
+web
+OpenAPI Initiative – The OpenAPI Initiative provides an open source, technical community, within which industry participants may easily contribute to building a vendor-neutral, portable and an open specification for providing technical metadata for REST APIs – the “OpenAPI Specification” (OAS).
+web
+OpenAPI Specification v3.2.0
+web
+OpenAPI Specification v3.2.0
+web
+OpenTelemetry Concepts | OpenTelemetry
+web
+OpenTelemetry Concepts | OpenTelemetry
+web
+OpenTelemetry semantic conventions 1.39.0 | OpenTelemetry
+web
+Optimize Interaction to Next Paint | Articles | web.dev
+web
+Overview - Configuration Language | Terraform | HashiCorp Developer
+web
+Overview - Sigstore
+web
+Overview | Kubernetes
+web
+Overview – SPDX
+web
+Platform Engineering Maturity Model | CNCF TAG App Delivery
+web
+Platform Engineering | Cloud Native Glossary
+web
+PostgreSQL: Documentation
+web
+PostgreSQL: Release Notes
+web
+Preface - Google SRE
+web
+Providers - Configuration Language | Terraform | HashiCorp Developer
+web
+RFC 7519 - JSON Web Token (JWT)
+web
+RFC 9110: HTTP Semantics
+web
+Rules of React
+drive_pdf
+SEBI - Guidelines on Outsourcing of activities by Intermediaries - Google Cloud
+web
+SLSA • About SLSA
+web
+SLSA • Security levels
+web
+SLSA • Supply chain threats
+web
+SLSA • Supply-chain Levels for Software Artifacts
+web
+SP 800-218 Rev. 1, Secure Software Development Framework (SSDF) Version 1.2: Recommendations for Mitigating the Risk of Software Vulnerabilities | CSRC
+web
+SP 800-218, Secure Software Development Framework (SSDF) Version 1.1: Recommendations for Mitigating the Risk of Software Vulnerabilities | CSRC
+web
+SPDX – Linux Foundation Projects Site
+web
+Security - Kubernetes
+web
+Security Whitepaper | CNCF TAG Security
+web
+Semantic Conventions | OpenTelemetry
+web
+Semantic conventions for HTTP | OpenTelemetry
+web
+Semantic conventions for URL | OpenTelemetry
+web
+Sigstore
+web
+Sigstore
+web
+Site Reliability Engineering (SRE) | Google Cloud
+web
+Specification Overview | CycloneDX
+web
+Specifications – SPDX
+web
+Summary of book "Clean Architecture" by Robert C. Martin - GitHub Gist
+web
+Terraform overview | Terraform | HashiCorp Developer
+description
+Texto pegado
+description
+Texto pegado
+description
+Texto pegado
+drive_pdf
+The DevOps Handbook - IT Revolution
+web
+The Standard of Code Review | eng-practices
+web
+The Twelve-Factor App
+web
+The Twelve-Factor App
+drive_pdf
+The Twelve-Factor App - Alison
+web
+Trends — Smashing Magazine
+web
+Twelve-Factor App methodology - Wikipedia
+web
+Web Content Accessibility Guidelines (WCAG) 2.2
+web
+Web Content Accessibility Guidelines (WCAG) 2.2
+web
+Writing exporters | Prometheus
+web
+https://cheatsheetseries.owasp.org/
+info
+web
+https://docs.github.com/actions/security-for-github-actions
+info
+web
+https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+info
+web
+https://owasp.org/API-Security/editions/2023/en/0x11-t10/
+info
+web
+https://owasp.org/Top10/2025/
+info
+web
+https://owasp.org/Top10/2025/0x00_2025-Introduction/
+info
+web
+https://owasp.org/Top10/2025/A03_2025-Software_Supply_Chain_Failures/
+info
+web
+https://owasp.org/Top10/2025/en/
+info
+web
+https://owasp.org/Top10/2025/en/
+info
+web
+https://owasp.org/www-chapter-minneapolis-st-paul/download/20211216_OWASP-MSP_OWASP_Top_Ten_2021.pdf?raw=true
+info
+web
+https://owasp.org/www-project-application-security-verification-standard/
+info
+web
+https://owasp.org/www-project-cyclonedx/
+info
+web
+https://www.cisa.gov/resources-tools/resources/cisa-secure-design-pledge
+info
+web
+https://www.cisa.gov/securebydesign
+info
+web
+https://www.cisa.gov/securebydesign/pledge
+info
+web
+prefers-reduced-motion - CSS | MDN
+Chat
+tune
+more_vert
+🏗️
+Antigravity Skill Factory: LLM Agent Training Framework
+122 fuentes
+
+Estos recursos detallan estándares técnicos y marcos de arquitectura para optimizar sistemas. Incluyen guías de AWS y Google Cloud, especificaciones de APIs (OpenAPI, AsyncAPI), protocolos de identidad (OpenID), accesibilidad (WCAG) y principios DevOps de mejora continua.
+
+keep
+Guardar en una nota
+copy_all
+thumb_up
+thumb_down
+¿Cuáles son los pilares principales del AWS Well-Architected Framework?
+¿Cómo mejoran las prácticas de DevOps el flujo de trabajo?
+¿Qué importancia tienen la accesibilidad y seguridad en el desarrollo?
+Hoy • 18:32
+
+Primero haz un “Source Index”:
+
+
+
+
+
+Lista todas las fuentes cargadas y clasifícalas: estándar / guía oficial / doc técnica / investigación / editorial.
+
+
+Resume en 5–10 bullets qué “reglas duras” aporta cada una (MUST/SHOULD).
+
+
+Detecta huecos críticos por dominios (front/back/seguridad/observabilidad/devops/testing/arquitectura).
+
+
+Para cada hueco, propón 3 URLs oficiales exactas para que yo las importe.
+No inventes contenido fuera de fuentes.
+
+
+Aquí tienes el Source Index detallado y el análisis de vacíos basado estrictamente en la documentación proporcionada.
+1) Source Index: Clasificación de Fuentes
+Estándar / Especificación Técnica1
+•  Web Content Accessibility Guidelines (WCAG) 2.2: Recomendación del W3C para accesibilidad web.2
+•  OpenAPI Specification v3.2.0: Especificación técnica para describir APIs RESTful.3
+•  The Twelve-Factor App: Metodología/Manifiesto estándar para construir aplicaciones SaaS.4
+•  NIST SP 800-204B (Attribute-based Access Control...): Estándar del NIST para seguridad en mallas de servicios (Service Mesh).
+Guía Oficial / Framework5
+•  AWS Well-Architected Framework: Marco de trabajo de mejores prácticas de arquitectura en AWS.6
+•  Microsoft Azure Well-Architected Framework pillars: Marco de trabajo de arquitectura en Azure.7
+•  Angular coding style guide: Guía oficial de estilo y convenciones para Angular.8
+•  Rules of React: Documentación oficial sobre las reglas idiomáticas de React.9
+•  Concepts | Kubernetes: Documentación oficial de conceptos clave de Kubernetes.10
+•  OpenTelemetry Concepts: Documentación oficial del proyecto OpenTelemetry.
+Investigación / Reporte Técnico11
+•  Architectural Resilience and the Evolution of Distributed Systems: Análisis técnico sobre evolución de software, microservicios y resiliencia.12
+•  Best Practices for Running Workloads in Public Cloud Environments: Artículo académico/técnico sobre cargas de trabajo en la nube.
+Editorial / Resumen13
+•  Google SRE book (Excerpts): Resumen/Landing page de los libros de Site Reliability Engineering de Google.14
+•  Summary of book "Clean Architecture" by Robert C. Martin: Resumen de conceptos de arquitectura limpia (GitHub Gist).
+
+--------------------------------------------------------------------------------
+
+2) Reglas Duras (MUST/SHOULD) por Fuente
+A continuación, se resumen las reglas imperativas extraídas de las fuentes principales:1
+ WCAG 2.2 (Estándar de Accesibilidad)
+• MUST: Todo contenido no textual (imágenes, gráficos) debe tener una alternativa de texto equivalente15.
+• MUST: No restringir la vista a una sola orientación (vertical/horizontal) a menos que sea esencial16.
+• MUST: El contraste de color para texto normal debe ser al menos 4.5:1 (AA) o 7:1 (AAA)17.
+• MUST: Toda la funcionalidad debe ser operable a través de una interfaz de teclado sin exigir tiempos específicos de pulsación18.
+• MUST: Las páginas web deben tener títulos que describan su tema o propósito19.2
+ OpenAPI Specification v3.2.0 (Estándar de API)
+• MUST: El documento debe contener los campos openapi, info y al menos uno de paths, components o webhooks20.
+• MUST: El campo info.version es obligatorio (distinto a la versión de la especificación)21.
+• MUST: Las URLs de los servidores pueden ser relativas, pero no deben contener query strings ni fragmentos22.
+• MUST: Si se definen variables de servidor (enum), el valor default debe existir dentro de esa enumeración23.
+• MUST: Cada expresión de plantilla en una ruta (ej. /pets/{id}) debe corresponder a un parámetro definido en la operación24.3
+ The Twelve-Factor App (Metodología)
+• MUST: Un solo código base (codebase) con control de versiones, múltiples despliegues25.
+• MUST: Declarar y aislar explícitamente las dependencias (no confiar en dependencias implícitas del sistema)25.
+• MUST: Almacenar la configuración en el entorno (variables de entorno), no en el código25.
+• MUST: Tratar los servicios de respaldo (BD, colas) como recursos adjuntos intercambiables25.
+• MUST: Separar estrictamente las etapas de construcción, lanzamiento y ejecución (Build, Release, Run)25.5
+ AWS Well-Architected Framework (Guía Oficial)
+• SHOULD: Dejar de adivinar las necesidades de capacidad; usar auto-scaling26.
+• MUST: Probar los sistemas a escala de producción y automatizar para facilitar la experimentación26.
+• SHOULD: Aplicar seguridad en todas las capas (defensa en profundidad: red, VPC, balanceador, instancia, OS, aplicación)27.
+• MUST: Habilitar la trazabilidad (logs, métricas) y auditar cambios en el entorno en tiempo real27.
+• MUST: Definir la infraestructura como código (IaC) para permitir repetibilidad y control de versiones28.4
+ NIST SP 800-204B (Seguridad en Service Mesh)
+• MUST: La comunicación entre el plano de control del service mesh y el orquestador (K8s API) debe estar autenticada y autorizada29.
+• SHOULD: No ejecutar contenedores como root (configurar MustRunAsNonRoot: true)30.
+• SHOULD: Configurar el sistema de archivos del contenedor como de solo lectura (readOnlyRootFilesystem: true) por defecto30.
+• MUST: Usar mTLS para la autenticación a nivel de servicio en la malla31.
+• SHOULD: Bloquear la escalada de privilegios (allowPrivilegeEscalation: false)30.8
+ Rules of React (Guía Oficial)
+• MUST: Los componentes y Hooks deben ser puros (mismas entradas, mismas salidas, sin efectos secundarios en el renderizado)32.
+• MUST: Solo llamar a Hooks desde el nivel superior de un componente funcional o desde otro Hook (no dentro de bucles o condiciones)32.7
+ Angular Coding Style Guide (Guía Oficial)
+• SHOULD: Separar palabras en los nombres de archivo con guiones (feature-name.component.ts)33.
+• SHOULD: Mantener un solo concepto (componente, servicio) por archivo34.
+• MUST: Implementar interfaces de ciclo de vida (implements OnInit) para asegurar el nombrado correcto de los métodos35.
+
+--------------------------------------------------------------------------------
+
+3) Huecos Críticos por Dominios
+Basado en el análisis de las fuentes cargadas, se detectan los siguientes vacíos donde falta documentación específica para entrenar a un agente de forma completa:
+Frontend
+• Vacío: Faltan estándares modernos de CSS/HTML y métricas de performance web específicas (Core Web Vitals) más allá de la mención general en las fuentes de arquitectura.
+• Vacío: Faltan guías de seguridad específicas para cliente (CSP, XSS, gestión de tokens en navegador) más allá de la mención de React/Angular.
+Backend / Lenguajes
+• Vacío: No hay guías de estilo ni "reglas duras" para lenguajes de backend específicos (Node.js, Python, Go, Java). Las fuentes actuales son agnósticas (arquitectura) o específicas de frontend (TS/JS en Angular/React).
+• Vacío: Falta documentación sobre patrones de diseño de bases de datos específicos (SQL vs NoSQL modeling patterns) más allá de la mención de alto nivel en el reporte36.
+Seguridad (AppSec)
+• Vacío: Falta un estándar de verificación de seguridad de aplicaciones detallado (como OWASP ASVS) para validar requisitos funcionales de seguridad.
+• Vacío: Falta información sobre seguridad en la cadena de suministro (Supply Chain Security) más allá de menciones generales.
+DevOps / CI/CD
+• Vacío: Aunque se menciona la separación de Build/Release25, no hay especificaciones técnicas sobre sintaxis de pipelines (GitHub Actions, GitLab CI, Jenkins) o herramientas de IaC específicas (Terraform, Ansible) más allá de menciones generales.
+Observabilidad
+• Vacío: Aunque OpenTelemetry37 y Google SRE38 están presentes, falta una guía de implementación práctica de métricas específicas (Prometheus) o estructuración de logs.
+
+--------------------------------------------------------------------------------
+
+4) Propuesta de URLs Oficiales para Importar
+Para cubrir los huecos detectados y mantener la calidad del corpus, sugiero importar las siguientes fuentes oficiales:
+1. Frontend & Performance (Core Web Vitals)
+• Fuente: web.dev (Google Developers)
+• URL: https://web.dev/explore/learn-core-web-vitals
+• Objetivo: Obtener las reglas duras sobre LCP, INP y CLS.
+2. Seguridad Aplicativa (OWASP)
+• Fuente: OWASP Top 10 (Estándar de facto de riesgos)
+• URL: https://owasp.org/www-project-top-ten/
+• Objetivo: Reglas concretas para prevenir las vulnerabilidades más críticas.
+3. Seguridad en APIs (OWASP API)
+• Fuente: OWASP API Security Top 10
+• URL: https://owasp.org/www-project-api-security/
+• Objetivo: Complementar la especificación OpenAPI con reglas de seguridad específicas para APIs (Broken Object Level Authorization, etc.).
+4. Infraestructura como Código (Terraform)
+• Fuente: HashiCorp Terraform Best Practices
+• URL: https://developer.hashicorp.com/terraform/tutorials/state/best-practices
+• Objetivo: Obtener reglas duras sobre gestión de estado y módulos, complementando los pilares de AWS/Azure.
+5. Modelado de Datos (PostgreSQL)
+• Fuente: PostgreSQL Documentation (Data Definition)
+• URL: https://www.postgresql.org/docs/current/ddl.html
+• Objetivo: Reglas técnicas sobre constraints, tipos de datos y normalización para complementar la visión arquitectónica.
+keep_pin
+Guardar como nota
+copy_all
+thumb_up
+thumb_down
+
+Haz un “Source Index”:
+
+
+
+
+
+Lista todas las fuentes cargadas y clasifícalas (estándar / guía oficial / doc técnica / investigación / editorial).
+
+
+Extrae 5–10 “reglas duras” por fuente (MUST/SHOULD) y conviértelas en criterios operativos verificables.
+
+
+Propón una taxonomía de skills (dominio → subdominio → skill).
+
+
+Detecta huecos y sugiere URLs oficiales para cubrirlos (sin inventar contenido).
+
+
+Aquí tienes el Source Index detallado, las reglas operativas, la taxonomía de skills y el análisis de vacíos, basado estrictamente en las fuentes proporcionadas.
+
+--------------------------------------------------------------------------------
+
+1) Source Index: Clasificación de Fuentes
+Estándar / Especificación Técnica
+• Web Content Accessibility Guidelines (WCAG) 2.2: Recomendación del W3C con criterios de éxito testables para accesibilidad web1.
+• OpenAPI Specification v3.2.0: Estándar para describir APIs HTTP, abarcando estructura, tipos de datos y seguridad2.
+• AsyncAPI Specification v3.0.0: Especificación para APIs orientadas a eventos (event-driven)3.
+• OpenID Connect Core 1.0: Capa de identidad sobre OAuth 2.04.
+• RFC 9110 (HTTP Semantics): Estándar del IETF que define la arquitectura y terminología de HTTP5.
+• RFC 7519 (JSON Web Token - JWT): Estándar para la representación de reclamaciones (claims) seguras entre partes6.
+• CycloneDX / SPDX: Estándares para listas de materiales de software (SBOM) y seguridad en la cadena de suministro7,8.
+• SLSA (Supply-chain Levels for Software Artifacts): Marco de seguridad para la integridad de la cadena de suministro9.
+• NIST SP 800-204B: Estándar para control de acceso basado en atributos (ABAC) en mallas de servicios10.
+• NIST SP 800-218 (SSDF): Marco de desarrollo de software seguro del NIST11.
+Guía Oficial / Framework
+• AWS Well-Architected Framework: Marco de mejores prácticas arquitectónicas en la nube (pilares de Seguridad, Fiabilidad, Eficiencia, etc.)12.
+• Google Cloud Architecture Framework: Guía de arquitectura y topologías para Google Cloud13.
+• Microsoft Azure Well-Architected Framework: Pilares de calidad arquitectónica para Azure14.
+• Google AIPs (API Improvement Proposals): Guías de diseño para APIs en Google (AIP-1)15.
+• DORA (DevOps Research and Assessment): Métricas de rendimiento de entrega de software16.
+• Rules of React: Reglas idiomáticas para el desarrollo en React17.
+• Angular Coding Style Guide: Guía de estilos y prácticas para Angular18.
+• OpenTelemetry Concepts / Semantic Conventions: Definiciones oficiales para observabilidad19,20.
+• MITRE ATT&CK: Base de conocimiento sobre tácticas y técnicas de adversarios21.
+Documentación Técnica
+• Terraform Language Documentation: Sintaxis y uso de IaC con Terraform22.
+• Kubernetes Concepts: Documentación sobre componentes y arquitectura de K8s23.
+• MDN Web Docs (ARIA, CSS, prefers-reduced-motion): Documentación técnica de desarrollo web24,25.
+• Google Cloud SRE / SRE Books: Prácticas de Site Reliability Engineering26.
+• Web.dev (Core Web Vitals, INP): Métricas de rendimiento web y optimización27,28.
+Investigación / Reporte Técnico
+• CNCF Platforms White Paper: Definición y madurez de la ingeniería de plataformas29.
+• Cloud Native Security Whitepaper (CNCF): Ciclo de vida de seguridad en entornos cloud native30.
+• Architectural Resilience and the Evolution of Distributed Systems: Análisis de evolución hacia sistemas distribuidos y resiliencia31.
+• Best Practices for Running Workloads in Public Cloud Environments: Análisis académico de cargas de trabajo en la nube32.
+Editorial / Metodología
+• The Twelve-Factor App: Metodología para construir aplicaciones SaaS33.
+• Trunk Based Development: Estrategia de gestión de versiones y ramas34.
+• Clean Architecture Summary: Resumen de principios de arquitectura de software35.
+
+--------------------------------------------------------------------------------
+
+2) Reglas Duras (MUST/SHOULD) y Criterios de Verificación
+Aquí se extraen reglas imperativas de 5 fuentes clave y se convierten en criterios operativos.
+A. WCAG 2.2 (Accesibilidad)
+• Regla: Todo contenido no textual presentado al usuario DEBE tener una alternativa textual que sirva al propósito equivalente36.
+    ◦ Verificación: Auditoría automatizada (Lighthouse/Axe) detecta imágenes sin alt + revisión manual de que el texto describe la función, no la apariencia.
+• Regla: La funcionalidad DEBE ser operable a través de un teclado sin requerir tiempos específicos de pulsación37.
+    ◦ Verificación: Navegar todo el flujo crítico usando solo Tab, Space, Enter y flechas; ninguna acción debe quedar bloqueada.
+• Regla: No se debe restringir la vista a una sola orientación (vertical/horizontal) a menos que sea esencial38.
+    ◦ Verificación: Rotar el dispositivo/viewport; el contenido debe refluir sin pérdida de funcionalidad.
+• Regla: El contraste de color para texto normal debe ser al menos 4.5:139.
+    ◦ Verificación: Análisis de contraste automatizado sobre todos los nodos de texto contra su background-color.
+• Regla: Las páginas web DEBEN tener títulos que describan su tema o propósito40.
+    ◦ Verificación: La etiqueta <title> es única y descriptiva en cada ruta/vista.
+B. OpenAPI Specification v3.2.0 (API Contracts)
+• Regla: El documento DEBE contener los campos openapi, info y al menos uno de paths, components o webhooks41.
+    ◦ Verificación: Linter de esquema (Spectral) valida la estructura raíz del YAML/JSON.
+• Regla: Las URLs de los servidores pueden ser relativas, pero NO DEBEN contener query strings ni fragmentos42.
+    ◦ Verificación: Regex sobre el campo servers.url buscando ? o #.
+• Regla: Si se define una variable de servidor (enum), el valor default DEBE existir dentro de esa enumeración42.
+    ◦ Verificación: Validación lógica: server.variables[key].default in server.variables[key].enum.
+• Regla: Cada expresión de plantilla en una ruta (ej. /pets/{id}) DEBE corresponder a un parámetro definido42.
+    ◦ Verificación: Correlación estática entre segmentos {param} en la URL y la lista parameters en la operación.
+• Regla: Las referencias ($ref) DEBEN usar la URI canónica ($self) si está presente41.
+    ◦ Verificación: Análisis estático de resolución de referencias en tiempo de build.
+C. NIST SP 800-204B (Service Mesh Security)
+• Regla: La comunicación entre el plano de control y el orquestador DEBE estar autenticada y autorizada4343.
+    ◦ Verificación: Verificar configuración de TLS mutuo (mTLS) en los componentes del sistema (ej. Istio control plane).
+• Regla: Se DEBE utilizar mTLS para la autenticación a nivel de servicio45.
+    ◦ Verificación: Política de red configurada en modo STRICT para mTLS entre sidecars.
+• Regla: Las políticas de autorización DEBEN restringir el acceso al menos a nivel de namespace por defecto46.
+    ◦ Verificación: Existencia de una política deny-all o allow-intra-namespace por defecto en el mesh.
+• Regla: El proxy sidecar DEBE generar logs para cada solicitud de servicio para asegurar que se aplican las políticas47.
+    ◦ Verificación: Presencia de logs de acceso (access logs) en la salida estándar o colector de logs del sidecar.
+• Regla: Si se usan certificados para mTLS, estos DEBEN estar enraizados en la PKI existente de la organización48.
+    ◦ Verificación: Inspección de la cadena de certificación de los proxies; no deben ser auto-firmados por el mesh si existe PKI corporativa.
+D. The Twelve-Factor App (Arquitectura SaaS)
+• Regla: Almacenar la configuración en el entorno (variables de entorno), no en el código49.
+    ◦ Verificación: Escaneo de código buscando credenciales o config hardcodeada; verificación de inyección de ENV vars en despliegue.
+• Regla: Separar estrictamente las etapas de construcción, lanzamiento y ejecución49.
+    ◦ Verificación: El pipeline CI/CD genera un artefacto inmutable (build) que se combina con config (release) para ejecutarse (run). No se compila en runtime.
+• Regla: Tratar los servicios de respaldo (BD, colas) como recursos adjuntos49.
+    ◦ Verificación: La URL de conexión a la base de datos es intercambiable mediante config sin cambios de código.
+• Regla: Maximizar la robustez con un inicio rápido y un apagado ordenado (graceful shutdown)49.
+    ◦ Verificación: Test de carga donde los contenedores reciben SIGTERM y deben cerrar conexiones limpiamente antes de morir.
+• Regla: Mantener la paridad entre desarrollo, staging y producción50.
+    ◦ Verificación: Uso de los mismos contenedores/imágenes y servicios de respaldo (mismo motor de BD) en todos los entornos.
+E. SLSA (Supply Chain Integrity)
+• Regla: El proceso de construcción (build) DEBE estar completamente definido en un script/código (Build as Code)51.
+    ◦ Verificación: No existen pasos manuales para generar el artefacto de producción; existe un archivo de definición de build (ej. cloudbuild.yaml).
+• Regla: El sistema de construcción DEBE generar una procedencia (provenance) autenticada51.
+    ◦ Verificación: El artefacto final tiene un metadato firmado criptográficamente que vincula el binario al commit fuente y al builder.
+• Regla: Todas las dependencias DEBEN ser declaradas explícitamente52.
+    ◦ Verificación: Existencia de lockfiles (package-lock.json, go.sum) y SBOM generado.
+
+--------------------------------------------------------------------------------
+
+3) Taxonomía de Skills (Dominio → Subdominio → Skill)
+Esta taxonomía se deriva exclusivamente de los temas tratados en las fuentes cargadas.
+Dominio: Frontend Engineering
+• Subdominio: Accesibilidad (A11y)
+    ◦ Skill: Implementación de patrones ARIA para modales y diálogos53.
+    ◦ Skill: Auditoría y corrección de contrastes de color según WCAG 2.2 AA/AAA39.
+    ◦ Skill: Gestión del foco y navegación por teclado sin trampas54.
+    ◦ Skill: Adaptación a preferencias de movimiento (prefers-reduced-motion)25.
+• Subdominio: Performance (Web Vitals)
+    ◦ Skill: Optimización de Interaction to Next Paint (INP) reduciendo latencia de inputs28.
+    ◦ Skill: Diagnóstico de Layout Shifts (CLS) en carga dinámica55.
+• Subdominio: React/Angular
+    ◦ Skill: Mantenimiento de pureza en componentes y hooks (Rules of React)17.
+    ◦ Skill: Estructuración de archivos por "concepto único" (Angular Style Guide)56.
+Dominio: Backend & API Engineering
+• Subdominio: Diseño de API
+    ◦ Skill: Definición de contratos OpenAPI v3.2 (schemas, parameters, responses)2.
+    ◦ Skill: Diseño de recursos y versionado estándar (Google AIPs)57.
+    ◦ Skill: Implementación de APIs orientadas a eventos con AsyncAPI3.
+    ◦ Skill: Uso correcto de semántica HTTP (métodos seguros vs idempotentes)58.
+• Subdominio: Identidad y Seguridad
+    ◦ Skill: Implementación de flujos OpenID Connect (Code Flow, ID Tokens)59.
+    ◦ Skill: Validación y manejo de JSON Web Tokens (JWT)6.
+    ◦ Skill: Implementación de autorización ABAC en Service Mesh60.
+Dominio: Cloud & Architecture
+• Subdominio: Patrones Arquitectónicos
+    ◦ Skill: Diseño de aplicaciones 12-Factor (config, backing services, disposability)49.
+    ◦ Skill: Implementación de Clean Architecture (separación de capas y dependencias)61,62.
+    ◦ Skill: Estrategias de desarrollo Trunk-Based34.
+• Subdominio: Resiliencia y Operación (SRE)
+    ◦ Skill: Definición de SLOs y SLIs63.
+    ◦ Skill: Implementación de Circuit Breakers y Bulkheads (Azure/Cloud Patterns)64.
+    ◦ Skill: Gestión de cuotas y límites de servicio (AWS Reliability)65.
+    ◦ Skill: Post-mortem y cultura libre de culpa63.
+Dominio: Platform & Security
+• Subdominio: Seguridad en Cadena de Suministro
+    ◦ Skill: Generación y verificación de SBOMs (SPDX/CycloneDX)66,67.
+    ◦ Skill: Implementación de niveles de seguridad de construcción (SLSA L1-L3)68.
+    ◦ Skill: Firma de artefactos y verificación (Sigstore/Cosign)69.
+• Subdominio: Infraestructura y Observabilidad
+    ◦ Skill: Instrumentación con OpenTelemetry (traces, metrics, logs)19.
+    ◦ Skill: Escritura de configuraciones de Terraform (HCL)22.
+    ◦ Skill: Definición de métricas de entrega DORA (Lead Time, Deployment Freq)16.
+
+--------------------------------------------------------------------------------
+
+4) Detección de Huecos y URLs Oficiales Sugeridas
+Basado en el análisis de las fuentes cargadas vs. un perfil completo de ingeniería, estos son los vacíos críticos y las fuentes oficiales sugeridas para cubrirlos sin inventar contenido.
+1. Hueco: Testing Automatizado Específico
+• Análisis: Aunque se menciona la importancia del testing (SRE, 12-factor), falta una guía técnica sobre cómo escribir tests modernos (Unit vs Integration vs E2E) con herramientas actuales.
+• Fuente Sugerida: Testing Library Docs (Estándar de facto en frontend testing centrado en usuario).
+• URL: https://testing-library.com/docs/guiding-principles
+2. Hueco: Ingeniería de Bases de Datos Relacionales (SQL Profundo)
+• Análisis: Hay menciones a PostgreSQL en el contexto de arquitectura, pero faltan guías sobre indexación, explain plans y optimización de queries específicas.
+• Fuente Sugerida: Use The Index, Luke (Guía agnóstica pero técnica sobre rendimiento SQL) o PostgreSQL Performance Optimization Docs.
+• URL: https://www.postgresql.org/docs/current/performance-tips.html
+3. Hueco: Seguridad en GraphQL
+• Análisis: Tenemos mucho sobre REST (OpenAPI) y AsyncAPI, pero GraphQL se menciona superficialmente. Faltan reglas sobre complejidad de consultas, profundidad y autorización en grafos.
+• Fuente Sugerida: OWASP GraphQL Cheat Sheet.
+• URL: https://cheatsheetseries.owasp.org/cheatsheets/GraphQL_Cheat_Sheet.html
+4. Hueco: WebAssembly (Wasm)
+• Análisis: La fuente "Architectural Resilience"70 menciona Wasm como el futuro, pero no hay documentación técnica sobre cómo implementarlo o sus interfaces (WASI).
+• Fuente Sugerida: WebAssembly.org Docs.
+• URL: https://webassembly.org/docs/security/
+5. Hueco: Gestión de Secretos en Profundidad
+• Análisis: Se menciona "no guardar secretos en código" (12-factor), pero falta una especificación sobre rotación, inyección dinámica y gestión de vida de secretos (Vault, etc.).
+• Fuente Sugerida: HashiCorp Vault Documentation (Concepts).
+• URL: https://developer.hashicorp.com/vault/docs/concepts/secrets-engines
+keep_pin
+Guardar como nota
+copy_all
+thumb_up
+thumb_down
+122 fuentes
+arrow_forward
+Studio
+dock_to_left
+audio_magic_eraser
+Resumen de audio
+edit
+subscriptions
+Resumen de vídeo
+edit
+flowchart
+Mapa mental
+auto_tab_group
+Informes
+cards_star
+Tarjetas didácticas
+edit
+quiz
+Cuestionario
+edit
+stacked_bar_chart
+Infografía
+edit
+tablet
+Presentación
+edit
+table_view
+Tabla de datos
+edit
+edit_fix_auto
+Los resultados de Studio se guardarán aquí.
+Después de añadir las fuentes, haz clic para añadir un resumen de audio, una guía de estudio o un mapa mental, entre otros.
+sticky_note_2
+Añadir nota
+NotebookLM puede ofrecer respuestas inexactas. Compruébalas.

@@ -22,6 +22,15 @@ Skip if:
 - Building proof-of-concept without production deployment
 - System has < 100 requests/day (console logging may suffice)
 
+## Hard Rules (MUST)
+> **Source**: OpenTelemetry Semantic Conventions & google SRE
+
+1. **Resource Attributes**: Every service MUST define `service.name`, `service.version`, and `deployment.environment`.
+2. **Context Propagation**: MUST use W3C Trace Context headers (`traceparent`, `tracestate`) for distributed traces.
+3. **Structured Logging**: Logs MUST be structured (JSON) and contain `trace_id` and `span_id` when available.
+4. **Metrics Naming**: Custom metrics MUST follow OTel semantic conventions (e.g., `system.cpu.utilization`, not `cpu_usage`).
+5. **No Vendor Lock-in**: Application code MUST only import the OTel API (`opentelemetry-api`), never the SDK or exporter directly (except at entry point).
+
 ## The OpenTelemetry Standard (2025)
 
 OpenTelemetry is the CNCF graduated project unifying observability:

@@ -18,6 +18,15 @@ Use this skill when:
 - Integrating enterprise SSO (SAML, OIDC)
 - Implementing fine-grained permissions (RBAC, ABAC, ReBAC)
 
+## Hard Rules (MUST / MUST NOT)
+> **Source**: NIST SP 800-63 & OWASP ASVS
+
+1. **Token Storage**: Access Tokens MUST NOT be stored in `LocalStorage` or `SessionStorage` (XSS Vulnerability). Use **HttpOnly Cookies** or **In-Memory** storage.
+2. **Algorithm Security**: MUST NOT allow `alg: none` in JWT headers. MUST explicitly whitelist allowed algorithms (e.g., `['ES256', 'RS256']`).
+3. **Secrets**: Signing keys MUST have high entropy (min 256-bit for HMAC/ECC, 2048-bit for RSA) and be rotated periodically.
+4. **Validation**: Applications MUST validate `iss` (Issuer), `aud` (Audience), `exp` (Expiration), and `nbf` (Not Before) claims.
+5. **Lifetimes**: Access tokens SHOULD NOT exceed 15-60 minutes.
+
 ## OAuth 2.1 Mandatory Requirements (2025 Standard)
 
 ```
@@ -76,12 +85,15 @@ Use this skill when:
 
 **Refresh token rotation:** Each refresh generates new access AND refresh tokens, invalidating the old refresh token.
 
-### Token Storage
+### Token Storage (Hard Rules)
 
-- **Access token:** Memory only (never localStorage)
-- **Refresh token:** HTTP-only cookie + SameSite=Strict
-- **CSRF token:** Separate non-HTTP-only cookie
-- **Never log tokens:** Redact in application logs
+| Token Type | Storage Mechanism | Security Reason |
+| :--- | :--- | :--- |
+| **Access Token** | **Memory Only** (Variable/Context) | Mitigates XSS. If tab closes, session ends (good for banking). |
+| **Refresh Token** | **HttpOnly + Secure + SameSite=Strict Cookie** | Mitigates XSS. Immune to JavaScript access. |
+| **CSRF Token** | **Double Submit Cookie** (or header) | Required if using Cookies for auth. |
+
+> **WARNING**: `LocalStorage` is accessible by ANY execution context (XSS) on the domain. **NEVER** store tokens there.
 
 ### JWT Claims (Required)
 

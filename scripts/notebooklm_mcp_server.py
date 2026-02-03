@@ -140,24 +140,59 @@ async def list_notebooks() -> str:
         try:
             page = await context.new_page()
             await page.goto("https://notebooklm.google.com/")
-            await page.wait_for_timeout(3000)
+            await page.wait_for_timeout(5000)
             
-            notebooks = await page.evaluate("""
-                () => {
-                    const links = Array.from(document.querySelectorAll('a[href*="/notebook/"]'));
-                    return links.map(a => ({href: a.href, text: a.innerText}));
+            # Try to find specifically the Antigravity notebook
+            # Utilizing Playwright's get_by_text to pierce Shadow DOM
+            try:
+                # Look for the title
+                notebook_element = page.get_by_text("Antigravity Skill Factory", exact=False).first
+                if await notebook_element.count() > 0:
+                    # Try to find the parent anchor
+                    # We might need to go up the tree. 
+                    # But often the text is inside the anchor or the card wraps the anchor.
+                    # Let's get the href from the closest 'a' tag or see where it leads.
+                    
+                    # Strategy: Click it and get the URL? safer to get href.
+                    # Locator for the anchor might be:
+                    # page.locator("a").filter(has_text="Antigravity Skill Factory")
+                    
+                    link = page.locator("a").filter(has_text="Antigravity Skill Factory").first
+                    href = await link.get_attribute("href")
+                    print(f"FOUND_NOTEBOOK_HREF: {href}")
+                    
+                    if href:
+                         return f"Found: {href}"
+            except Exception as e:
+                print(f"Specific search failed: {e}")
+
+            # Fallback: Dump all text
+            text = await page.evaluate("document.body.innerText")
+            print(f"DASHBOARD_TEXT_DUMP:\n{text[:1000]}")
+            
+            # Fallback: Dump all links with Shadow DOM piercing
+            # This script recurses through shadow roots to find links
+            links = await page.evaluate("""
+                async () => {
+                    function getAllLinks(root) {
+                        const links = [];
+                        if (root.querySelectorAll) {
+                            root.querySelectorAll('*').forEach(node => {
+                                if (node.tagName === 'A' && node.href.includes('/notebook/')) {
+                                    links.push({text: node.innerText, href: node.href});
+                                }
+                                if (node.shadowRoot) {
+                                    links.push(...getAllLinks(node.shadowRoot));
+                                }
+                            });
+                        }
+                        return links;
+                    }
+                    return getAllLinks(document.body);
                 }
             """)
             
             await page.close()
-            
-            report = "Available Notebooks:\n"
-            seen = set()
-            for n in notebooks:
-                nid = n['href'].split('/notebook/')[-1]
-                if nid not in seen:
-                    report += f"- ID: {nid} | Title: {n['text']}\n"
-                    seen.add(nid)
             
             return report
             

@@ -27,6 +27,17 @@ Do NOT use for:
 
 ## Core Design Principles
 
+### Hard Rules (MUST / MUST NOT)
+> **Source**: OpenAPI v3.2 & Google AIPs
+
+1. **Server URLs**: MUST NOT contain query strings or fragments (`?ver=1`, `#main`).
+   - *Bad*: `https://api.example.com/v1?region=us`
+   - *Good*: `https://us.api.example.com/v1`
+2. **Parameters**: Path templates (`/pets/{id}`) MUST strictly match a defined parameter in `parameters`.
+3. **Enums**: If a default value is specified, it MUST be present in the `enum` list.
+4. **References**: `$ref` usage MUST point to canonical URIs if `$self` is present.
+5. **Versioning**: MUST use URL Path or Media Type versioning. Query parameter versioning (`?v=1`) is FORBIDDEN.
+
 ### Resource-Oriented Design (REST)
 
 Use nouns for resources, not verbs in URLs:
@@ -259,13 +270,19 @@ For complete security patterns, see references/authentication.md
 
 ## OpenAPI Specification
 
-### Basic Structure
+### Basic Structure (OpenAPI v3.1+)
+
+**Strict Requirements**:
+- `info.version` is MANDATORY.
+- Root object MUST contain `openapi`, `info`, and at least one of `paths`, `components`, or `webhooks`.
 
 ```yaml
 openapi: 3.1.0
 info:
   title: User Management API
-  version: 2.0.0
+  version: 2.0.0 # API version, not spec version
+  summary: "Enterprise User Directory"
+
 
 paths:
   /users:
@@ -295,9 +312,15 @@ For complete OpenAPI examples, see examples/openapi/
 
 ## AsyncAPI Specification
 
-### Event-Driven APIs
+### Event-Driven APIs (v3.0.0)
 
-AsyncAPI defines message-based APIs (WebSockets, Kafka, MQTT):
+AsyncAPI v3.0 defines message-based architectures (Kafka, MQTT, WebSockets).
+
+**Hard Rules**:
+- MUST separate `channels` (address) from `operations` (actions).
+- Messages MUST define `payload` schema clearly.
+
+
 
 ```yaml
 asyncapi: 3.0.0
