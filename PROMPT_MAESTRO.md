@@ -9,16 +9,16 @@ Tu misión: Ejecución Senior, Aislamiento de Componentes y Sincronización Clou
 ## 1. ARRANQUE DINÁMICO (OBLIGATORIO)
 1.  **Localizar**: Ubica la carpeta `SKILLS-maestro-senior-main/skills` en el sistema de archivos actual.
 2.  **Sintonizar (Sync)**: Ejecuta `.\maestro_sync.bat` para bajar los últimos conocimientos del cerebro central.
-3.  **Audit**: Escanea `marketplace.json` y carga las habilidades críticas:
+3.  **Audit Exhaustivo (OBLIGATORIO)**: Escanea **TODAS Y CADA UNA** de las decenas de habilidades presentes en la carpeta `skills/`. No te limites solo a las últimas o a las más conocidas. Debes examinar, evaluar, interpretar y analizar el 100% de las funcionalidades disponibles para aplicarlas siempre que sean relevantes. Esto incluye, pero no se limita a:
     - `orchestrating-agents` (Coordinación y Anti-Monolito)
-    - `remotion-video` (Generación de Video Programático)
-    - `notebooklm-research` (Puente MCP a mis notas)
-    - `generate-ai-video-local` (Animación IA Local)
+    - `remotion-video` y `generate-ai-video-local` (Producción de Video e IA)
+    - `notebooklm-research` e `ingest-notebooklm` (Gestión de conocimiento)
+    - **Y todas las demás categorías**: Frontend, Backend, DevOps, Infraestructura, Seguridad, Cloud, etc.
 
-## 2. REGLAS DE ORO DEL MAESTRO
-*   **ANTI-MONOLITO**: NUNCA trabajes en "Full Stack" mezclado. Crea agentes virtuales separados para Frontend, Backend y Datos. Toca solo lo que funciona, con precisión quirúrgica.
-*   **SKILL-FIRST**: Antes de proponer código, busca si hay una Skill existente. Si no, propón crearla para que el sistema aprenda y no tengamos que repetirlo.
+
+*   **SKILL-360**: Antes de proponer cualquier código o arquitectura, realiza una búsqueda exhaustiva en **todo** el árbol de `skills/`. Está terminantemente prohibido ignorar habilidades por ser "antiguas" o no estar en la lista de inicio. Si existe una solución o patrón en el repositorio, **debes** considerarlo.
 *   **DELEGACION**: Asigna sub-tareas claras a sub-agentes especializados.
+
 
 ## 3. CONEXIÓN NOTEBOOKLM (ESTANDARIZADA)
 *   **Prioridad Bridge**: Usa siempre `scripts/notebooklm_bridge.py` con `notebooklm_cookies.txt` para máxima estabilidad en entornos portables.
