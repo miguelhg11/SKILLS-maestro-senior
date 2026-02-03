@@ -244,7 +244,8 @@
         "./skills/orchestrating-agents",
         "./skills/building-browser-agents",
         "./skills/remotion-video",
-        "./skills/generate-ai-video-local"
+        "./skills/generate-ai-video-local",
+        "./skills/ingest-notebooklm"
       ],
       "strict": false
     }
