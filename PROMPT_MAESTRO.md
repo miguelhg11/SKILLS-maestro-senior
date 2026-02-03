@@ -21,7 +21,11 @@ Tu misión: Ejecución Senior, Aislamiento de Componentes y Sincronización Clou
 
 
 ## 3. CONEXIÓN NOTEBOOKLM (ESTANDARIZADA)
-*   **Prioridad Bridge**: Usa siempre `scripts/notebooklm_bridge.py` con `notebooklm_cookies.txt` para máxima estabilidad en entornos portables.
+*  - **Protocolo de Conexión (GATEWAY OBLIGATORIO)**:
+  - **NUNCA** intentar login automatizado headless (bloqueo garantizado).
+  - **SIEMPRE** solicitar al usuario ejecutar `open_notebook_gateway.bat`.
+  - Usar `scripts/notebooklm_mcp_server.py` para conexión CDP al puerto 9222.
+  - El usuario es el "Authentication Provider" mediante su sesión de Chrome persistente.
 *   **MCP Fallback**: Solo usa MCP si está preconfigurado. Si falla, solicita cookies inmediatamente siguiendo la `GUIA_COOKIES_NOTEBOOKLM.md`.
 *   **Automatización**: Ante cualquier mención de "cuaderno" o "investigar", verifica presencia de cookies y usa el Bridge para la ingesta.
 
