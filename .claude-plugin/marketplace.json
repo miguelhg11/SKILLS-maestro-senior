@@ -247,7 +247,8 @@
         "./skills/generate-ai-video-local",
         "./skills/ingest-notebooklm",
         "./skills/notebooklm-research",
-        "./scripts/notebooklm_mcp_server.py"
+        "./scripts/notebooklm_mcp_server.py",
+        "./skills/advanced-research-methodology"
       ],
       "strict": false
     }
