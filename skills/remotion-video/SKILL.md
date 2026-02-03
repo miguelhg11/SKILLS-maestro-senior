@@ -18,12 +18,13 @@ Transformar texto y datos de investigación almacenados en NotebookLM en un arch
 
 ## Pasos de Ejecución
 
-1.  **Obtener Contexto (Fase de Investigación):**
-    - Consulta NotebookLM: "Dame un guion estructurado para un video de [DURACIÓN] segundos sobre [TEMA], incluyendo títulos, subtítulos y códigos de color preferidos."
-    - Validad que la respuesta incluya:
-        - `title`: Título principal.
-        - `sections`: Lista de secciones con texto y duración estimada.
-        - `colors`: Paleta de colores (hex).
+1.  **Obtener Contexto (Fase de Investigación - MULTI-MODO):**
+    *   **MODO A (NotebookLM):** Si el usuario menciona "usar cuaderno", "usar notas" o "NotebookLM":
+        - Consulta NotebookLM: "Dame un guion estructurado para un video de [DURACIÓN] segundos sobre [TEMA]..."
+    *   **MODO B (Directo):** Si el usuario da la instrucción directa (ej: "Haz un video sobre gatos"):
+        - Genera tú mismo el guion estructurado basándote en tu conocimiento general o la descripción del usuario.
+    *   **Salida Esperada (Ambos Modos):**
+        - Valida que tengas: `title`, `sections` (lista con texto y duración), y `colors`.
 
 2.  **Generar Código (Fase de Codificación):**
     - Localiza el archivo `./video-engine/src/Composition.tsx`.
