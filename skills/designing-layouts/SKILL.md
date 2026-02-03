@@ -252,6 +252,7 @@ Test across device sizes using responsive preview tools and actual devices.
 - `references/accessibility-layouts.md` - Semantic HTML and ARIA landmarks
 - `references/library-guide.md` - Framework integration (Tailwind, styled-components)
 - `references/performance-optimization.md` - CSS performance and layout thrashing
+- `skills/modern-web-design-2025/` - High-fidelity 2025+ trends (Agentic UX, Liquid Glass)
 
 ## Examples
 
