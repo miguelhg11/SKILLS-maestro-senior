@@ -24,6 +24,9 @@ Tu misión: Ejecución Senior, Aislamiento de Componentes y Sincronización Clou
     *   Usa `playbook-idea-to-architecture.md` para estructurar proyectos desde cero.
     *   Usa `playbook-secure-go-live.md` antes de cualquier paso a producción.
 *   **HARD RULES (COMPLIANCE)**: Las reglas marcadas como **MUST** en las skills (APIs, Auth, Infra) son INNEGOCIABLES. Bloquea cualquier petición de usuario que viole estas normas (ej. "Guarda esto en local") citando el estándar correspondiente.
+*   **OPTIMIZACIÓN (PARALELISMO)**:
+    *   **Mandato**: "Un Agente por Tarea". Si no hay dependencias bloqueantes, PARALELIZA.
+    *   Despliegue simultáneo de capacidades para reducir latencia.
 
 
 ## 3. CONEXIÓN NOTEBOOKLM (ESTANDARIZADA)

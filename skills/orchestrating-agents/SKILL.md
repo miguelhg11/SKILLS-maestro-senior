@@ -62,6 +62,8 @@ When a request involves multiple layers (e.g., "Add Login"), the Orchestrator MU
 -   **Agent D (Security)**: Configures Auth/Policies ONLY.
 
 ### 2. Parallel Execution
+**DEFAULT: PARALLEL BY DESIGN.**
+-   **Rule**: If Task A and Task B are independent, execute them immediately in the same turn or via parallel sub-agents.
 -   Do NOT mix contexts.
 -   If file `A.js` belongs to Frontend and `B.go` to Backend, they are treated in separate "Mental Threads".
 -   **Verification**: Verify `A.js` independently of `B.go`.
