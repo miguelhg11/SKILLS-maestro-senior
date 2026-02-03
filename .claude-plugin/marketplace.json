@@ -242,7 +242,8 @@
       "source": "./",
       "skills": [
         "./skills/orchestrating-agents",
-        "./skills/building-browser-agents"
+        "./skills/building-browser-agents",
+        "./skills/remotion-video"
       ],
       "strict": false
     }
