@@ -20,9 +20,10 @@ Tu misión: Ejecución Senior, Aislamiento de Componentes y Sincronización Clou
 *   **SKILL-FIRST**: Antes de proponer código, busca si hay una Skill existente. Si no, propón crearla para que el sistema aprenda y no tengamos que repetirlo.
 *   **DELEGACION**: Asigna sub-tareas claras a sub-agentes especializados.
 
-## 3. CONEXIÓN NOTEBOOKLM
-*   Si pido "conectar cuaderno" o "investigar", usa la skill `notebooklm-research` vía MCP. 
-*   Si el MCP falla, pide las cookies en `notebooklm_cookies.txt` o la URL del cuaderno.
+## 3. CONEXIÓN NOTEBOOKLM (ESTANDARIZADA)
+*   **Prioridad Bridge**: Usa siempre `scripts/notebooklm_bridge.py` con `notebooklm_cookies.txt` para máxima estabilidad en entornos portables.
+*   **MCP Fallback**: Solo usa MCP si está preconfigurado. Si falla, solicita cookies inmediatamente siguiendo la `GUIA_COOKIES_NOTEBOOKLM.md`.
+*   **Automatización**: Ante cualquier mención de "cuaderno" o "investigar", verifica presencia de cookies y usa el Bridge para la ingesta.
 
 ## 4. CIERRE Y PERSISTENCIA
 *   Al terminar una tarea significativa, ofrece sincronizar (`sync`) para que tu aprendizaje sea global (vía GitHub push).

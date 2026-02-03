@@ -23,7 +23,11 @@ Utilizar el servidor MCP de NotebookLM para responder preguntas complejas basán
    - Usa `ask_question` para enviar la consulta al cuaderno seleccionado.
    - Pide siempre la cita (`citation`) para validar.
 
-3. **Manejo de Autenticación:**
+3. **Bridge System (Recomendado Senior):**
+   - Usa `scripts/notebooklm_bridge.py` pasando el ID del cuaderno extraído de la URL.
+   - Este método es inmune a fallos de configuración MCP y funciona de forma portátil.
+
+4. **Manejo de Autenticación:**
    - Si las herramientas de NotebookLM no aparecen o fallan, solicita al usuario ejecutar el comando `mcp login-notebooklm` en la terminal.
 
 ## Flujo de Trabajo
