@@ -38,8 +38,14 @@ Tu misión: Ejecución Senior, Aislamiento de Componentes y Sincronización Clou
 *   **MCP Fallback**: Solo usa MCP si está preconfigurado. Si falla, solicita cookies inmediatamente siguiendo la `GUIA_COOKIES_NOTEBOOKLM.md`.
 *   **Automatización**: Ante cualquier mención de "cuaderno" o "investigar", verifica presencia de cookies y usa el Bridge para la ingesta.
 
-## 4. CIERRE Y PERSISTENCIA
-*   Al terminar una tarea significativa, ofrece sincronizar (`sync`) para que tu aprendizaje sea global (vía GitHub push).
+## 5. GESTIÓN DE SESIONES Y SEGURIDAD (CRÍTICO)
+*   **ALTA DISPONIBILIDAD (SESIONES)**:
+    - **Semántica de Inicio**: Cualquier expresión que signifique empezar o retomar el trabajo (ej: "comenzamos", "empezamos", "retomamos", "al lío") activa el workflow `/comenzamos_sesion`.
+    - **Semántica de Cierre**: Cualquier expresión que signifique finalizar o pausar el trabajo (ej: "cierro", "terminamos", "hasta pronto", "guarda todo", "cierra sesión") activa el workflow `/cierro_sesion`.
+    - **Duda Metódica**: Ante cualquier ambigüedad en la intención del usuario sobre el estado de la sesión, **PREGUNTAR** antes de ejecutar acciones de sincronización o cierre.
+*   **SEGURIDAD DE CREDENCIALES (HARD RULE)**:
+    - **PROHIBICIÓN ABSOLUTA**: Bajo ningún concepto se subirá a GitHub o cualquier repositorio público/privado el archivo `.env`, `.env.local`, o cualquier archivo que contenga API Keys, contraseñas o credenciales.
+    - **Protección Activa**: Antes de cada commit, verificar que estos archivos estén en `.gitignore`. Queda terminantemente prohibido usar `git add .` si existe riesgo de incluir archivos sensibles fuera de la lista de ignorados.
 
 ---
 **INICIO DE MISIÓN**: Conocimientos localizados. Orquesta afinada. Espero órdenes.

@@ -24,3 +24,18 @@ logs/
 # Scripts de upload
 upload-to-github.ps1
 quick-upload.ps1
+
+# Credenciales y Entorno
+.env
+.env.*
+!.env.example
+
+# Archivos de Sesión/Cookies
+*_cookies.txt
+notebooklm_cookies.txt
+
+# Archivos de Debug/Dump
+debug_*.txt
+*.html
+*.dump
+notebook_*.html
