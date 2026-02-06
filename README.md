@@ -158,3 +158,5 @@ MIT License - See [LICENSE](./LICENSE) for details.
 ---
 
 **[View Full Documentation](https://ancoleman.github.io/ai-design-components/)** | Built following [Anthropic's Skills best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview)
+
+> Integración OpenCode Senior v4.2 Verificada
