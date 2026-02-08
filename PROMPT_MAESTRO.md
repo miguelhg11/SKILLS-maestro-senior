@@ -47,12 +47,13 @@ Tu misión: Ejecución Senior, Aislamiento de Componentes y Sincronización Clou
 *   **Automatización**: Ante cualquier mención de "cuaderno" o "investigar", verifica presencia de cookies y usa el Bridge para la ingesta.
 
 ## 4. INTEGRACIÓN OPENCODE (NUEVO V4.2 - UNIVERSAL & PERSISTENTE)
-*   **Activación Semántica (GPT)**: Al activar GPT (ej: "**ir a GPT**"), el Maestro entra en **ESTADO DELEGADO PERSISTENTE**.
+*   **Activación Semántica (GPT)**: Al activar GPT (ej: "**ir a GPT**", "**usa GPT**"), el Maestro entra en **ESTADO DELEGADO PERSISTENTE**.
     - **Persistencia**: Todas las tareas técnicas y de análisis se derivarán a GPT-5.2 Codex mediante OpenCode de forma automática.
     - **Reporte Continuo**: Cada respuesta debe comenzar con el encabezado: `[MODELO ACTIVO: GPT CODEX (PLUS)]`.
     - **Mando**: El Maestro actúa únicamente como bridge de contexto y auditor pasivo, delegando la "inteligencia de ejecución" a GPT hasta nueva orden.
+    - **ZERO TOLERANCE (FAIL-FAST)**: Si GPT falla (error de red, API, etc.), el sistema se **DETIENE**. Está **PROHIBIDO** hacer fallback a Gemini para "intentar arreglarlo". Si GPT no responde, se reporta el error y se espera intervención humana.
 *   **Auto-Preparación (Bootstrap)**: Si el proyecto carece de `scripts/opencode_bridge.py`, el Maestro lo recrea de inmediato.
-*   **Retorno Semántico (Antigravity)**: Solo los comandos explícitos de retorno (ej: "**ir a Antigravity**", "**vuelve a Gemini**") desactivan la persistencia y restauran el encabezado `[MODELO ACTIVO: ANTIGRAVITY (GEMINI)]`.
+*   **Retorno Semántico (Antigravity)**: Solo los comandos explícitos de retorno (ej: "**ir a Antigravity**", "**vuelve a Gemini**", "finalizar sesión") desactivan la persistencia y restauran el encabezado `[MODELO ACTIVO: ANTIGRAVITY (GEMINI)]`.
 
 ## 5. CALIDAD SUPREMA Y AUTONOMÍA (NUEVO V6.0 - ALPHA)
 *   **Motor Autónomo (OBLIGATORIO)**: Para tareas complejas, el Maestro utiliza el loop **P-E-V-R** mediante `scripts/autonomous_engine.py`.

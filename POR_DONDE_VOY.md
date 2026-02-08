@@ -12,6 +12,9 @@ El ecosistema ha alcanzado el nivel **v6.1 Alpha**. El Maestro es ahora capaz de
 - **Autonomía Total (v6.0)**: Creación de `scripts/autonomous_engine.py` (Loop P-E-V-R).
 - **Gobernanza v6.1**: Protocolo Hands-Free (SI A TODO) reforzado y cierre mandatorio sincronizado.
 - **Evolución v6.1 Alpha**: Actualización integral de `PROMPT_MAESTRO.md` y workflows con directiva `// turbo-all`.
+- **Corrección Crítica (v6.2)**: Parcheado `autonomous_engine.py` para ejecución correcta en Windows (fix `WinError 2`).
+- **Gobernanza GPT (Zero Tolerance)**: Implementado mecanismo Fail-Fast estricto. Si GPT falla, el sistema se detiene (sin fallback a Gemini).
+- **Hardening**: Regla de "Solo GPT" documentada en `PROMPT_MAESTRO.md`.
 
 ## 3. Pendientes (Próxima Sesión)
 - [ ] Refinar los verificadores semánticos en el Loop de Reparación (Repair Loop).

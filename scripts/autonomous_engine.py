@@ -19,7 +19,7 @@ class AutonomousEngine:
 
     def plan(self, objective):
         """Usa GPT-5.2 Codex para desglosar el objetivo en pasos ejecutables."""
-        print(f"{self.log_tag} Planificando objetivo: {objective}")
+        print(f"{self.log_tag} [MODEL: GPT-5.2 CODEX] Planificando objetivo: {objective}")
         self.logger.log_compliance_check("v6.0_PLANNING", "IN_PROGRESS", f"Objective: {objective}")
         
         prompt = (
@@ -30,16 +30,24 @@ class AutonomousEngine:
         )
         
         plan_raw = self._get_opencode_output(prompt)
+        
+        # FAIL-FAST: Si opencode falla, detenemos todo inmediatemente.
+        if plan_raw.startswith("Error executing opencode"):
+             raise RuntimeError(f"FATAL: GPT-5.2 Codex access failed. {plan_raw}")
+
         try:
             # Limpiar posible basura de la terminal si existe
             json_start = plan_raw.find('{')
             json_end = plan_raw.rfind('}') + 1
+            if json_start == -1 or json_end == 0:
+                 raise ValueError("GPT response contained no valid JSON")
+                 
             plan_data = json.loads(plan_raw[json_start:json_end])
             self.logger.log_event("PLAN_GENERATED", plan_data)
             return plan_data.get('steps', [])
         except Exception as e:
             self.logger.log_event("PLAN_PARSE_ERROR", {"error": str(e), "raw": plan_raw})
-            return []
+            raise RuntimeError(f"FATAL: Failed to parse GPT plan. Raw output: {plan_raw[:100]}...") from e
 
     def verify(self, step):
         """Verifica el éxito de un paso delegando la comprobación a GPT."""
@@ -55,6 +63,9 @@ class AutonomousEngine:
         )
         
         verification = self._get_opencode_output(prompt).strip()
+        if verification.startswith("Error executing opencode"):
+             raise RuntimeError(f"FATAL: GPT access failed during verification. {verification}")
+
         is_success = "SUCCESS" in verification.upper()
         
         self.logger.log_compliance_check(f"VERIFY_{desc[:20]}", "SUCCESS" if is_success else "FAILED")
@@ -74,6 +85,8 @@ class AutonomousEngine:
         )
         
         repair_plan = self._get_opencode_output(prompt)
+        if repair_plan.startswith("Error executing opencode"):
+             raise RuntimeError(f"FATAL: GPT access failed during repair. {repair_plan}")
         try:
             json_start = repair_plan.find('{')
             json_end = repair_plan.rfind('}') + 1
@@ -91,7 +104,12 @@ class AutonomousEngine:
 
     def run_autonomous_loop(self, objective):
         """Ejecuta el ciclo completo P-E-V-R."""
-        steps = self.plan(objective)
+        try:
+            steps = self.plan(objective)
+        except RuntimeError as e:
+            print(f"{self.log_tag} 🛑 CRITICAL FAILURE: {e}")
+            return False
+
         if not steps:
             print(f"{self.log_tag} Fallo al generar el plan.")
             return False
@@ -133,10 +151,27 @@ class AutonomousEngine:
     def _get_opencode_output(self, prompt):
         """Lanza la consulta y extrae el texto de salida."""
         try:
-            cmd = ["opencode", "run", "-m", "openai/gpt-5.2-codex", prompt]
-            result = subprocess.run(cmd, capture_output=True, text=True, check=True)
-            return result.stdout
+            # En Windows, 'opencode' suele ser un .cmd/.ps1, requiere shell=True
+            cmd = f'opencode run -m openai/gpt-5.2-codex "{prompt}"'
+            
+            # Usamos shell=True para que Windows resuelva el comando
+            result = subprocess.run(
+                cmd, 
+                shell=True, 
+                capture_output=True, 
+                text=True, 
+                encoding='utf-8',
+                errors='replace'
+            )
+            
+            if result.returncode != 0:
+                self.logger.log_event("OPENCODE_ERROR", {"stderr": result.stderr, "stdout": result.stdout})
+                return f"Error executing opencode: {result.stderr}"
+                
+            return result.stdout.strip()
+            
         except Exception as e:
+            self.logger.log_event("OPENCODE_EXCEPTION", {"error": str(e)})
             return str(e)
 
 if __name__ == "__main__":
