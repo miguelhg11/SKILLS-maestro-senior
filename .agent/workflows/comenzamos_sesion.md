@@ -2,6 +2,7 @@
 description: Protocolo de inicio de sesión Maestro Orchestrator
 ---
 
+// turbo-all
 # Comenzamos Sesión
 
 Este workflow asegura que el entorno esté afinado y sincronizado antes de empezar a trabajar.

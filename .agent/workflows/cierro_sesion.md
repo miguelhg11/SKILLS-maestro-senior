@@ -2,6 +2,7 @@
 description: Protocolo de cierre seguro de sesión Maestro Orchestrator
 ---
 
+// turbo-all
 # Cierro Sesión
 
 Este workflow asegura que nada se pierda y el entorno quede limpio y sincronizado.
