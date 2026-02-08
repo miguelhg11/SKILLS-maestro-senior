@@ -32,7 +32,7 @@ Para que el modelo de OpenCode trabaje con el contexto del proyecto Antigravity:
 - **Configuración**: `opencode config` para parámetros globales.
 
 ## Protocolo de Conmutación (Hot-Swap & Persistente)
-- **Activación GPT**: `"ir a GPT"` -> Antigravity entra en **ESTADO DELEGADO PERSISTENTE**. Todas las tareas se envían a GPT y los reportes llevan el tag `[MODELO ACTIVO: GPT CODEX (PLUS)]`.
+- **Activación GPT**: `"ir a GPT"` -> Antigravity entra en **ESTADO DELEGADO PERSISTENTE**. Todas las tareas se envían a GPT y los reportes llevan el tag `[SISTEMA: GENERADO POR GPT CODEX 5.2 - CONTINUIDAD ACTIVA]`. Esta persistencia es **UNIVERSAL** y aplica al Maestro, al Open Agent Manager y a todos los sub-agentes.
 - **Retorno Antigravity**: `"ir a Antigravity"` -> Se desactiva la persistencia y se restaura el encabezado a `[MODELO ACTIVO: ANTIGRAVITY (GEMINI)]`.
 
 ## Inyección de Contexto (Handover Senior)
