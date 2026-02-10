@@ -54,8 +54,23 @@ def get_project_context(logger):
     """Captura archivos clave y estructura para dar contexto a OpenCode."""
     context = []
     # Archivos fundamentales
-    key_files = ["PROMPT_MAESTRO.md", ".gitignore", "README.md"]
+    key_files = ["PROMPT_MAESTRO.md", ".gitignore", "README.md", ".env"]
     
+    # INYECCIÓN DE MODO DE SISTEMA (CRÍTICO PARA AGENT MANAGER)
+    try:
+        # Intentar leer el modo directamente del .env para inyectarlo como "Instrucción de Sistema"
+        env_mode = "AUTO"
+        if os.path.exists(".env"):
+             with open(".env", "r") as f:
+                 for line in f:
+                     if line.startswith("MAESTRO_MODE="):
+                         env_mode = line.strip().split("=")[1]
+        
+        context.append(f"--- SYSTEM RUNTIME STATE ---\nMAESTRO_MODE={env_mode}\nTIMESTAMP={os.getenv('TIME', 'UNKNOWN')}\n")
+        logger.info(f"Injecting MAESTRO_MODE={env_mode} into context")
+    except Exception as e:
+        logger.warning(f"Failed to inject system mode: {e}")
+
     for file in key_files:
         if os.path.exists(file):
             logger.info("Leyendo archivo clave: %s", file)

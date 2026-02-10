@@ -9,3 +9,6 @@ rich>=14.0.0
 
 # Interactive TUI dashboard
 textual>=0.50.0
+
+# Kimi AI / OpenAI Compatible Client
+openai>=1.0.0

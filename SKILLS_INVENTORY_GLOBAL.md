@@ -7,6 +7,8 @@ Este documento contiene el mapeo estratégico de todas las capacidades disponibl
 - **architecting-security**: Diseño de seguridad desde el núcleo.
 - **managing-git-workflows**: Control de versiones y sincronización Cloud.
 - **opencode-integration**: Delegación avanzada a GPT-5.2 Codex.
+- **kimi-integration**: Análisis de contexto masivo con Kimi AI (Moonshot).
+- **META-COMMANDS**: Comandos directos de sistema (e.g., "Modo GPT", "Switch to Kimi") interceptados por el motor para evitar confusión con configuración de apps.
 
 ## 2. IA e Investigación Avanzada (L4)
 - **notebooklm-research**: Investigación libre de alucinaciones vía CDP/Gateway.
