@@ -13,6 +13,30 @@ def _setup_logger():
     )
     return logging.getLogger("opencode_bridge")
 
+def _test_agent_identity_inheritance(logger):
+    """Simula una consulta de un sub-agente para verificar su identidad heredada."""
+    context = get_project_context(logger)
+    mode_line = [line for line in context.splitlines() if "MAESTRO_MODE=" in line]
+    
+    print("\n--- TEST DE HERENCIA DE IDENTIDAD ---")
+    if mode_line:
+        print(f"1. Contexto Recibido: {mode_line[0]}")
+        mode = mode_line[0].split("=")[1]
+        
+        if mode == "KIMI_ONLY":
+            print("2. Identidad Esperada: [SISTEMA: GENERADO POR KIMI AI ...]")
+            print("3. Estado: ✅ CORRECTO (Kimi Activo)")
+        elif mode == "GPT_ONLY":
+            print("2. Identidad Esperada: [SISTEMA: GENERADO POR GPT CODEX ...]")
+            print("3. Estado: ✅ CORRECTO (GPT Activo)")
+        else:
+            print("2. Identidad Esperada: [MODELO: GPT-5.2 CODEX] (Modo Auto)")
+            print("3. Estado: ⚠️ MODO AUTO (GPT por defecto)")
+    else:
+        print("1. Contexto Recibido: NINGUNO")
+        print("3. Estado: ❌ FALLO CRÍTICO (Sin herencia)")
+    print("-------------------------------------\n")
+
 def _read_text_file(path, logger):
     try:
         with open(path, "r", encoding="utf-8") as f:
@@ -108,6 +132,11 @@ def get_project_context(logger):
 
 if __name__ == "__main__":
     logger = _setup_logger()
+    
+    if len(sys.argv) > 1 and sys.argv[1] == "--test-identity":
+        _test_agent_identity_inheritance(logger)
+        sys.exit(0)
+
     logger.info("Iniciando captura de contexto")
     context_text = get_project_context(logger)
     # Escribir a un archivo temporal para que OpenCode lo lea o pasarlo por stdin
