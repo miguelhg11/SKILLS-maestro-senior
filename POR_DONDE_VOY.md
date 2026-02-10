@@ -1,15 +1,23 @@
-# Estado del Proyecto: 10/02/2026
+# POR DONDE VOY (Estado del Proyecto)
 
-## ✅ Logros de la Sesión
-1.  **Motor Híbrido Estabilizado**: Implementado switch dinámico Kimi/GPT en `autonomous_engine.py`.
-2.  **Protección de Cuota**: Se bloqueó el fallback a Gemini cuando Kimi está activo (Ahorro de costes).
-3.  **Herencia de Agentes**: Solucionado bug donde los sub-agentes ignoraban el modelo maestro. Ahora `opencode_bridge.py` inyecta la identidad obligatoria.
-4.  **Auditoría Holística**: Escaneado completo del proyecto con Kimi (128k context) sin errores.
+## Hitos Alcanzados (V6.1)
+- [x] Integración Grok-3 (scripts/grok_integration.py).
+- [x] Refactorización `AutonomousEngine` con Orquestación Granular.
+- [x] Implementación de Modo NATIVO (Gemini 3).
+- [x] **Automatización Maestro**: El Prompt Maestro ahora se auto-ejecuta al "iniciar sesión".
+- [x] Documentación de Jerarquía de Mando (`MODOS_DE_USO.md`).
+- [x] Sincronización completa con GitHub.
 
-## ⚠️ Puntos de Atención para Siguiente Sesión
-*   **Limpieza**: Existen carpetas `__pycache__` que podrían borrarse para higiene.
-*   **Portabilidad**: Recordar crear el `.env` manualmente si se clona en otro PC (ver `walkthrough.md`).
+## Tareas Pendientes / Próximos Pasos
+- [ ] Implementar `CLAUDE_ONLY` o `DEEPSEEK_ONLY` si es necesario.
+- [ ] Realizar pruebas de campo en un proyecto multi-agente real (Frontend Kimi + Backend GPT + Research Grok).
+- [ ] Optimizar la persistencia del contexto entre cambios de modo.
 
-## 🏁 Estado Final
-SISTEMA ONLINE. MODO NATIVO (Antigravity).
-LISTO PARA SINCRONIZACIÓN.
+## Estado del Sistema
+- **Modo Actual**: AUTO (Restaurado para próxima sesión).
+- **Gateway GPT**: Activo (Debe ser reiniciado en la próxima sesión si se pierde el túnel).
+- **Kimi API**: ✅ Operativa.
+- **Grok API**: ✅ Operativa.
+
+---
+*Echa un vistazo a `walkthrough.md` para detalles técnicos de los cambios de hoy.*

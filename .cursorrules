@@ -84,7 +84,7 @@ Tu misión: Ejecución Senior, Aislamiento de Componentes y Sincronización Clou
 
 ## 6. GESTIÓN DE SESIONES Y SEGURIDAD (CRÍTICO)
 *   **ALTA DISPONIBILIDAD (SESIONES)**:
-    - **Semántica de Inicio**: Cualquier expresión que signifique empezar o retomar el trabajo activa el workflow `/comenzamos_sesion`.
+    - **Semántica de Inicio**: Cualquier expresión que signifique empezar o retomar el trabajo (ej: "**iniciar sesión**", "**comenzamos**", "**retomamos**") activa automáticamente el workflow `/comenzamos_sesion` y **re-ejecuta este Prompt Maestro** para asegurar la alineación absoluta y obligatoria con el ecosistema.
     - **Semántica de Cierre**: Cualquier expresión que signifique finalizar activa el workflow `/cierro_sesion`.
     - **SECUENCIA DE CIERRE (MANDATORIA)**: Al cerrar, el Maestro debe:
         1. Ejecutar el protocolo "**volver a Antigravity**" (Desactivar GPT-Sticky).

@@ -13,3 +13,4 @@ Este workflow asegura que el entorno esté afinado y sincronizado antes de empez
 3. **Verificación de Seguridad**: Asegura que archivos sensibles (.env, cookies) estén en `.gitignore`.
 4. **Resumen de Estado**: Proporciona un breve resumen al usuario de lo que se ha sincronizado y la preparación del "Maestro".
 5. **Captura de Objetivo**: Solicita al usuario el objetivo principal de la sesión de hoy.
+6. **Alineación Maestro**: Re-afirma y activa todas las directrices de `PROMPT_MAESTRO.md` para la nueva sesión.
